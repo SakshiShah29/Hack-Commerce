@@ -46,69 +46,118 @@ const navigation = [
 
 export const Footer = () => {
   return (
-    <footer className="mt-16 bg-gray-100 p-4 sm:p-6">
-      <div className="mx-auto max-w-5xl px-4 py-4 sm:px-12 lg:px-5">
-        <div className="md:flex md:justify-between">
-          <div className="mb-6 md:mb-0">
-            <Link href="/" className="flex items-center gap-2">
-              <Image className="block h-10 w-10" src={logo} alt="SWEJobs.fyi" />
-              <span className="self-center whitespace-nowrap text-xl font-semibold">
-                SWEJobs.fyi
-              </span>
-            </Link>
-          </div>
-          <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
-            {navigation.map(({ title, items }, i) => (
-              <div key={i}>
-                <h2 className="mb-6 text-sm font-semibold uppercase text-gray-900">{title}</h2>
-                <ul className="text-gray-600">
-                  {items.map(({ name, href }, i) => (
-                    <li className="mb-4" key={i}>
-                      <Link href={href} className="hover:underline">
-                        {name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+    <div className="flex items-end w-full bg-white">
+
+    <footer className="w-full text-gray-700 bg-purple-100 body-font">
+        <div
+            className="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+            <div className="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
+                <a className="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start">
+                    LOGO
+                </a>
+                <p className="mt-2 text-sm text-gray-500">Design, Code and Ship!</p>
+                <div className="mt-4">
+                    <span className="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+                        <a className="text-gray-500 cursor-pointer hover:text-gray-700">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                className="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a className="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                className="w-5 h-5" viewBox="0 0 24 24">
+                                <path
+                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a className="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                            </svg>
+                        </a>
+                        <a className="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="0" className="w-5 h-5" viewBox="0 0 24 24">
+                                <path stroke="none"
+                                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                                </path>
+                                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                            </svg>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div className="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
+                <div className="w-full px-4 lg:w-1/4 md:w-1/2">
+                    <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">About</h2>
+                    <nav className="mb-10 list-none">
+                        <li className="mt-3">
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">Company</a>
+                        </li>
+                        <li className="mt-3">
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">Careers</a>
+                        </li>
+                        <li className="mt-3">
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">Blog</a>
+                        </li>
+                    </nav>
+                </div>
+                <div className="w-full px-4 lg:w-1/4 md:w-1/2">
+                    <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Support</h2>
+                    <nav className="mb-10 list-none">
+                        <li className="mt-3">
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">Contact Support</a>
+                        </li>
+                        <li className="mt-3">
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">Help Resources</a>
+                        </li>
+                        <li className="mt-3">
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">Release Updates</a>
+                        </li>
+                    </nav>
+                </div>
+                <div className="w-full px-4 lg:w-1/4 md:w-1/2">
+                    <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Platform
+                    </h2>
+                    <nav className="mb-10 list-none">
+                        <li className="mt-3">
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">Terms &amp; Privacy</a>
+                        </li>
+                        <li className="mt-3">
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">Pricing</a>
+                        </li>
+                        <li className="mt-3">
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">FAQ</a>
+                        </li>
+                    </nav>
+                </div>
+                <div className="w-full px-4 lg:w-1/4 md:w-1/2">
+                    <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Contact</h2>
+                    <nav className="mb-10 list-none">
+                        <li className="mt-3">
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">Send a Message</a>
+                        </li>
+                        <li className="mt-3">
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">Request a Quote</a>
+                        </li>
+                        <li className="mt-3">
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">+123-456-7890</a>
+                        </li>
+                    </nav>
+                </div>
+            </div>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-        <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center">
-            © 2022{' '}
-            <Link href="/" className="hover:underline">
-              SWEJobs.fyi™
-            </Link>
-            . All Rights Reserved.
-          </span>
-          <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-            <Link
-              href="https://github.com/kevinshen56714/SWEJobs.fyi"
-              className="text-gray-500 hover:text-gray-900"
-            >
-              <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  fillRule="evenodd"
-                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                  clipRule="evenodd"
-                ></path>
-              </svg>
-              <span className="sr-only">GitHub account</span>
-            </Link>
-            <Link
-              href="https://twitter.com/SWEJobsfyi"
-              className="text-gray-500 hover:text-gray-900"
-            >
-              <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
-              </svg>
-              <span className="sr-only">Twitter page</span>
-            </Link>
-          </div>
+        <div className="bg-purple-200">
+            <div className="container px-5 py-4 mx-auto">
+                <p className="text-sm text-gray-700 capitalize xl:text-center">© 2023 All rights reserved </p>
+            </div>
         </div>
-      </div>
     </footer>
+
+</div>
   )
 }
