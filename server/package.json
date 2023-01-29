@@ -17,6 +17,7 @@
     "@logtail/node": "^0.1.14",
     "@logtail/winston": "^0.1.14",
     "@types/pg": "^8.6.6",
+    "axios": "^1.2.6",
     "body-parser": "^1.20.1",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",

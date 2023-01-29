@@ -5,6 +5,7 @@ import cors from "cors";
 import { logger } from "./services/logger";
 import { code } from "./services/user";
 import { twilio } from "./routes/twilio.routes";
+import { job } from "./routes/jobs.routes";
 
 export const app = express();
 const PORT = process.env.PORT || 5000;
@@ -13,6 +14,7 @@ app.use(bodyParser.json());
 app.use("/code", code);
 app.use(cors()); // configure cors
 app.use("/twilio", twilio);
+app.use("/jobs", job);
 
 app.get("/", (req: Request, res: Response) => {
   logger.info("Health Check");
