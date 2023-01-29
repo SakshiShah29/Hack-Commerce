@@ -32,7 +32,7 @@ export default function Home(props: {
 
   return (
     <div>
-      <CustomHead title="SWEJobs.fyi - Software Engineer Jobs and Trends Tracker"></CustomHead>
+      <CustomHead title="GetYourJob - One stop solution for Job Listing"></CustomHead>
       <main className="mt-20 flex flex-col">
       <div className="relative  min-h-300 bg-white bg-cover min-w-screen">
     <div className="flex flex-col items-center justify-center p-10 mx-auto lg:flex-row lg:max-w-6xl lg:p-0">
@@ -59,13 +59,12 @@ export default function Home(props: {
         </div>
         <div className="relative w-full px-5 rounded-lg cursor-pointer md:w-2/3 lg:w-1/2 group xl:px-0">
             <div className="absolute top-0 left-0 w-11/12 -mt-20 opacity-50">
-            {/* <Image
-            loader={"./../../assets/4565.jpg"}
-      src="4565.jpg"
+             <img className='mr-200'
+      src="https://cdni.iconscout.com/illustration/premium/thumb/job-application-2161927-1816233.png"
       alt="Picture of the author"
-      width={500}
-      height={500}
-    /> */}
+      width={300}
+      height={300} 
+    />
             </div>
             <div className="relative overflow-hidden rounded-md shadow-2xl cursor-pointer group">
                 <div className="absolute flex items-center justify-center w-full h-full">
@@ -137,7 +136,7 @@ export default function Home(props: {
               check all jobs
             </Link>{' '}
             or{' '}
-            <Link className="underline" href="/about/about-data">
+            <Link className="underline" href="/about/about-us">
               learn more
             </Link>{' '}
             about how this works
@@ -150,8 +149,8 @@ export default function Home(props: {
             <div className="relative inline-flex items-center mx-auto align-middle">
                 <div className="pb-12 text-center">
                     <h1 className="max-w-5xl text-2xl font-bold leading-none tracking-tighter text-neutral-600 md:text-5xl lg:text-6xl lg:max-w-7xl">
-           An open platform to hire coders  <br className="hidden lg:block"/>
-            based on <span className = "text-purple-500">skills </span>  and <span className = "text-purple-500">Projects.</span>
+           An open platform for all the jobs  <br className="hidden lg:block"/>
+            based on <span className = "text-purple-500">skills  </span>  and <span className = "text-purple-500">Projects.</span>
           </h1>
 
                     <form action="" method="post" id="revue-form" name="revue-form" target="_blank" className="p-2 mt-8 transition duration-500 ease-in-out transform border2 bg-gray-50 md:mx-auto rounded-xl sm:max-w-lg sm:flex">

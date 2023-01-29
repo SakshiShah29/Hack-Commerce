@@ -14,7 +14,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { SkillType } from '../types/Skills'
 import classNames from 'classnames'
-import logo from '../public/logo.png'
+//import logo from '../public/logo.png'
 import { useRouter } from 'next/router'
 import GithubCorner from 'react-github-corner'
 
@@ -87,7 +87,7 @@ export const NavBar = () => {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <p>LOGO</p>
+              <img src="../public/logo.png" width="30" height="30" className="d-inline-block align-top" alt="React Bootstrap logo"/>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map(({ href, name, icon }) => {
@@ -140,23 +140,6 @@ export const NavBar = () => {
                           <Menu.Item>
                             {({ active }) => (
                               <Link
-                                href="/about/about-data"
-                                className={classNames(
-                                  active ? 'bg-gray-100' : '',
-                                  'flex items-center gap-2 px-4 py-2 text-sm text-gray-700'
-                                )}
-                              >
-                                <InformationCircleIcon
-                                  className="block h-6 w-6"
-                                  aria-hidden="true"
-                                />
-                                About Data
-                              </Link>
-                            )}
-                          </Menu.Item>
-                          <Menu.Item>
-                            {({ active }) => (
-                              <Link
                                 href="/about/about-us"
                                 className={classNames(
                                   active ? 'bg-gray-100' : '',
@@ -171,7 +154,7 @@ export const NavBar = () => {
                           <Menu.Item>
                             {({ active }) => (
                               <Link
-                                href="https://github.com/kevinshen56714/SWEJobs.fyi"
+                                href="https://github.com/SakshiShah29/Hack-Commerce"
                                 className={classNames(
                                   active ? 'bg-gray-100' : '',
                                   'flex items-center gap-2 px-4 py-2 text-sm text-gray-700'

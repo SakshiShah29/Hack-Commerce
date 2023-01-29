@@ -26,7 +26,7 @@ export default function Document() {
         <meta property="twitter:domain" content="swejobs.fyi" />
         <meta property="twitter:url" content="https://swejobs.fyi/" />
         <meta name="twitter:image" content="https://swejobs.fyi/og-img.png" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <body>
         <Main />
