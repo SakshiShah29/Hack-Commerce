@@ -22,6 +22,7 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "pg": "^8.9.0",
+    "twilio": "^3.84.1",
     "typescript": "^4.9.4",
     "winston": "^3.8.2"
   },
@@ -30,6 +31,7 @@
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.15",
     "@types/node": "^18.11.18",
+    "@types/twilio": "^3.19.3",
     "ts-node": "^10.9.1",
     "tslib": "^2.4.1"
   },
